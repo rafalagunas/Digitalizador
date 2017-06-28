@@ -32,13 +32,3 @@ while True:
 text_file = open("formatos/Texto.txt", "w") #Creamos el archivo de texto para editarlo
 text_file.write("%s" %asString) #Añadimos la cadena de texto resultante en la función anterior
 text_file.close() #Se cierra el archivo y se guarda
-
-#! /bin/bash
-#script
-
-#os.system("espeak -v es-la -s110 -p135 -f formatos/Texto.txt -w formatos/audio.mp3") # s representa las palabras leídas por minuto, p el pitch
-#os.system("cat formatos/Texto.txt | iconv -c -f utf-8 -t ISO-8859-1 | enscript -o formatos/file.ps") #Codificar el archivo txt en UTF-8, conversión a postscript
-#os.system("ps2pdf formatos/file.ps formatos/file.pdf") #Conversión de postscript a pdf
-#os.system("rm formatos/file.ps") #Se elimina el archivo postscript innecesario
-#os.system("ebook-convert formatos/file.pdf formatos/file.epub --title título --authors autores") #Creación del formato epub mediante el pdf
-os.system("clear") #Limpiamos la pantallahola
