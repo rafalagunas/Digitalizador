@@ -2,22 +2,13 @@
 # -*- coding: utf-8 -*-
 
 from subprocess import call
-import numpy as np
-import Image
-import cv2
-from PIL import Image
-import pytesseract
-import urllib2
-import sys
 import os
 
 host = "192.168.0.103:8080" #Dirección ip del dispositivo móvil con cámara
 if len(sys.argv)>1:
     host = sys.argv[1]
 
-hoststr = 'http://' + host + '/video'
 print 'Streaming ' + hoststr #Mostramos la ip desde donde se hace el streaming
-stream=urllib2.urlopen(hoststr) #Abrimos el streaming en una ventana
 
 bytes=''
 while True:
